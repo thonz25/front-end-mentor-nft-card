@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  font-size: 18px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  position: relative;
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 0.9rem;
+  border: none;
+  cursor: pointer;
+}
+
+.img-container:hover .eye-img {
+  display: block;
+}
+
+.img-container:hover .cube-img {
+  opacity: 0.5;
+}
+
+.eye-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+}
+h1:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+.details {
+  color: hsl(215, 51%, 70%);
+  font-size: 0.9rem;
+}
+
+.flex-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.price {
+  color: hsl(178, 100%, 50%);
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.price::before {
+  content: "";
+  background-image: url("./icon-ethereum.svg");
+  width: 11px;
+  height: 18px;
+}
+.duration {
+  color: hsl(215, 51%, 70%);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.duration::before {
+  content: "";
+  background-image: url("./icon-clock.svg");
+  width: 17px;
+  height: 17px;
+}
+hr {
+  background-color: hsl(215, 32%, 27%);
+}
+.flex-creator {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.avatar {
+  width: 11%;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+span {
+  color: hsl(215, 51%, 70%);
+}
+.card {
+  background-color: hsl(216, 50%, 16%);
+  width: 270px;
+  display: grid;
+  gap: 1rem;
+  padding: 1em;
+  border-radius: 0.8rem;
+}
+.info-container {
+  display: grid;
+  gap: 1rem;
+}
+.cube-img {
+  width: 100%;
+  border-radius: 0.8rem;
+  height: 100%;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: hsl(215, 32%, 27%);
+}
